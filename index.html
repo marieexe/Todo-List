@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <title>Todolist | Coding Week</title>
+
+  <!-- Icon -->
+  <link rel="icon" href="images/icon.jpg">
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+   <!-- Stile -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Lato chiaro -->
+   <link rel="stylesheet" href="style.css" id="themeLink">
+   <!-- Lato oscuro -->
+   <link rel="stylesheet" href="dark-style.css" id="themeLink" disabled>
+
+</head>
+
+<body>
+  <div class="container">
+
+
+    <!-- Intestazione -->
+    <header class="panel">
+      <h1 style="font-family:courier;"> TodoList|Lista Manga & Anime </h1>
+      <img src="images/icon5t.png" alt="Banner">
+    </header>
+    <div class="filter-buttons">
+      <button class="filter-btn" data-filter="Home">Home</button>
+      <button class="filter-btn" data-filter="Purchased">Acquistati</button>
+      <button class="filter-btn" data-filter="Missed">Mancanti</button>
+    </div>
+
+    <!-- Sezione principale -->
+    <main>
+      <!-- Messaggio da mostrare se non ho attività -->
+      <p class="empty-list-message"></p>
+
+      <!-- Lista attività -->
+      <ul class="todo-list">
+
+      </ul>
+
+      <!-- pannello aggiunta attività -->
+      <div class="panel add-todo">
+        <input type="text" placeholder="Aggiungi Titolo">
+        <button class="input-btn">
+          <img src="images/add.svg" alt="plus icon">
+        </button>
+      <!-- pannello reset attività -->
+        <button class="input-btn">
+          <img class="icona" src="images/reset1.png" alt="reset icon">
+        </button>
+      <!-- L'altra Leva! -->
+        <button class="input-btn">
+            <img src="images/lamp-white.png" alt="switch icon">                  
+          </button>
+          <ul id=".todo-list"></ul>  
+      </div>
+     
+      
+    </main>
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
